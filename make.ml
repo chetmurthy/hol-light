@@ -10,9 +10,9 @@
 (* ------------------------------------------------------------------------- *)
 (* Record the build date and OCaml version for the startup banner.           *)
 (* ------------------------------------------------------------------------- *)
-
+(*
 #load "unix.cma";;
-
+*)
 let startup_banner =
    let {Unix.tm_mday = d;Unix.tm_mon = m;Unix.tm_year = y;Unix.tm_wday = w} =
      Unix.localtime(Unix.time()) in

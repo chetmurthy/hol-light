@@ -1,0 +1,22 @@
+#use "topfind.camlp5";;
+#require "findlib.internal";;
+#require "compiler-libs.common" ;;
+#require "ounit2";;
+#require "fmt";;
+#require "rresult";;
+#require "pcre";;
+#require "bos";;
+#require "str";;
+#require "num";;
+#require "unix";;
+
+#predicates "syntax,camlp5hol";;
+#require "pa_hol_syntax";;
+#use "make.ml";;
+
+(*
+;;; Local Variables: ***
+;;; mode:tuareg ***
+;;; End: ***
+
+*)

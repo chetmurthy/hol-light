@@ -18,7 +18,7 @@ Sys.catch_break true;;
 (* Other quotations ending in `...:` are treated just as (escaped) strings,  *)
 (* so they can be parsed in a type context etc.                              *)
 (* ------------------------------------------------------------------------- *)
-
+(*
 let quotexpander s =
   if s = "" then failwith "Empty quotation" else
   let c = String.sub s 0 1 in
@@ -38,7 +38,7 @@ Quotation.add "tot" (Quotation.ExStr (fun x -> quotexpander));;
 (* ------------------------------------------------------------------------- *)
 
 set_jrh_lexer;;
-
+*)
 (* ------------------------------------------------------------------------- *)
 (* Load in the bignum library and set up printing in the toplevel.           *)
 (* ------------------------------------------------------------------------- *)

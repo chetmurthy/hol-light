@@ -29,14 +29,14 @@ let temp_path = ref "/tmp";;
 (* For Ocaml < 3.10, use the built-in camlp4                                 *)
 (* and for Ocaml >= 3.10, use camlp5 instead.                                *)
 (* ------------------------------------------------------------------------- *)
-
+(*
 if let v = String.sub Sys.ocaml_version 0 4 in v >= "3.10"
 then (Topdirs.dir_directory "+camlp5";
       Topdirs.dir_load Format.std_formatter "camlp5o.cma")
 else (Topdirs.dir_load Format.std_formatter "camlp4o.cma");;
 
 Topdirs.dir_load Format.std_formatter (Filename.concat (!hol_dir) "pa_j.cmo");;
-
+*)
 (* ------------------------------------------------------------------------- *)
 (* Load files from system and/or user-settable directories.                  *)
 (* Paths map initial "$/" to !hol_dir dynamically; use $$ to get the actual  *)

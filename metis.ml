@@ -85,7 +85,7 @@ let maxInt = Some max_int;;
 
 let div x y = x / y;;
 
-let abs = Pervasives.abs;;
+let abs = Stdlib.abs;;
 
 end
 
@@ -131,9 +131,9 @@ end
 
 module Math = struct
 
-let exp = Pervasives.exp;;
-let ln = Pervasives.log;;
-let sqrt = Pervasives.sqrt;;
+let exp = Stdlib.exp;;
+let ln = Stdlib.log;;
+let sqrt = Stdlib.sqrt;;
 let pow (x,y) = x ** y;;
 
 end
