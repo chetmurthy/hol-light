@@ -8,10 +8,25 @@ commands.  There's a bunch of opam packages there, but I'm sure most
 aren't necessary.  Just .... this is my standard environment and I'm
 just doing this quickly.
 
+The last few lines are to load the ocaml environment ("include0"
+-underscore "ml"), and then load a modified hol.ml file.  Hope it's
+all clear.  I've tried it out in a clean opam switch, and it seems to
+be working (did it earlier today with a switch that had a bunch of
+stuff in it, and it worked there too).
+
+As an FYI, it is very straightforward to add a toplevel directive so
+you can get HOL-OCaml syntax by the simple directive
+
+#camlp5hol ;;
+
 ================================================================
 
 opam switch 4.11.1
 eval 'opam config -env'
-opam install -y not-ocamlfind ocamlfind fmt rresult pcre bos num core_kernel ounit2
+opam install -y not-ocamlfind ocamlfind fmt rresult pcre bos num ounit2
 opam pin -y camlp5 https://github.com/camlp5/camlp5.git
 opam pin -y pa_hol_syntax https://github.com/chetmurthy/pa_hol_syntax.git
+
+$ ocaml
+#use "include0_ml";;
+#use "hol.ml" ;;

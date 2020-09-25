@@ -9,7 +9,6 @@
 #require "str";;
 #require "num";;
 #require "unix";;
-#require "core_kernel";;
 
 #predicates "syntax,camlp5hol";;
 #require "pa_hol_syntax";;
