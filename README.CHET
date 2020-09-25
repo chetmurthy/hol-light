@@ -1,0 +1,17 @@
+
+John,
+
+OK, here's a branch for you to try out.
+
+Instructions for using it.  I'll just write it up as a sequence of
+commands.  There's a bunch of opam packages there, but I'm sure most
+aren't necessary.  Just .... this is my standard environment and I'm
+just doing this quickly.
+
+================================================================
+
+opam switch 4.11.1
+eval 'opam config -env'
+opam install -y not-ocamlfind ocamlfind fmt rresult pcre bos num core_kernel ounit2
+opam pin -y camlp5 https://github.com/camlp5/camlp5.git
+opam pin -y pa_hol_syntax https://github.com/chetmurthy/pa_hol_syntax.git
